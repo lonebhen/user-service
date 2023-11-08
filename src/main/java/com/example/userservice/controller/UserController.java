@@ -5,10 +5,8 @@ import com.example.userservice.dto.CreateUserDto;
 import com.example.userservice.dto.EditPasswordDto;
 import com.example.userservice.dto.EditUserDto;
 import com.example.userservice.dto.UserDto;
-import com.example.userservice.exception.UserServiceException;
 import com.example.userservice.service.impl.UserServiceImpl;
 import lombok.extern.slf4j.Slf4j;
-import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -20,7 +18,7 @@ import java.util.List;
 
 @Slf4j
 @Controller
-@RequestMapping("/api/v1/")
+@RequestMapping("/api/v1")
 public class UserController {
 
     @Autowired
